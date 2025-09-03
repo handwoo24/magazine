@@ -11,8 +11,8 @@ export const Route = createRootRoute({
     ],
     links: [{ rel: 'stylesheet', href: appCss }],
   }),
-
   shellComponent: RootDocument,
+  notFoundComponent: () => <div>Not Found</div>,
 })
 
 function RootDocument({ children }: { children: React.ReactNode }) {
